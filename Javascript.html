@@ -1,0 +1,38 @@
+I have transcribed and combined the steps from your latest screenshot into a complete, working HTML file. This code
+includes the button, the result display area, and the JavaScript function that handles the multiplication even when a
+parameter is undefined.
+
+HTML
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function Parameter Task</title>
+</head>
+
+<body>
+
+    <button onclick="multiply(4)">Click Me!</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Step 8: Create function with a condition for undefined parameter
+        function multiply(a, b) {
+            if (b === undefined) {
+                alert("The value of b is undefined");
+                b = 5;
+            }
+
+            // Step 9: Create a variable to store the product
+            var result = a * b;
+
+            // Step 10: Display the result using document.getElementById()
+            document.getElementById("result").innerHTML = "The product is: " + result;
+        }
+    </script>
+
+</body>
+
+</html>
