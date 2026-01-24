@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h2>Class Static Method</h2>
+        <p id="wassup"></p>
+        <p id="hi"></p>
+        <p id="welcome"></p>
+        
+        <script>
+            class Student {
+                constructor(name) {
+                    this.studentName = name;
+                }
+                static wassup() { //static method
+                    return "wassup!";
+                }
+                static welcome(x) {
+                    return "Welcome to Codingal" + x.studentName;
+                }
+                hi() {
+                    return "how R U" + this.studentName;
+                }
+            }
+            myname = newStudent("Bob");
+                document.getElementById("wassup").innerHTML = Student.wassup()
+                document.getElementById("hi").innerHTML = myname.hi()
+                document.getElementById("Welcome").innerHTML = Student.welcome(myname);
+            </script>
+    </body>
+</html>
